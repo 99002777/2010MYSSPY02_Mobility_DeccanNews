@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DeccanNews</string>
+    <string name="enter_name">enter_name</string>
+    <string name="Password">Password</string>
+    <string name="Login">Login</string>
+    <string name="Remember_me">Remember me</string>
+    <string name="Register">Register</string>
+</resources>
