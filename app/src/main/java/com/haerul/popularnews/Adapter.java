@@ -98,7 +98,23 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder>{
         void onItemClick(View view, int position);
     }
 
-    
+    public MyViewHolder(View itemView, OnItemClickListener onItemClickListener) {
+
+            super(itemView);
+
+            itemView.setOnClickListener(this);
+            title = itemView.findViewById(R.id.title);
+            desc = itemView.findViewById(R.id.desc);
+            author = itemView.findViewById(R.id.author);
+            published_ad = itemView.findViewById(R.id.publishedAt);
+            source = itemView.findViewById(R.id.source);
+            time = itemView.findViewById(R.id.time);
+            imageView = itemView.findViewById(R.id.img);
+            progressBar = itemView.findViewById(R.id.prograss_load_photo);
+
+            this.onItemClickListener = onItemClickListener;
+
+        }
 
         @Override
         public void onClick(View v) {
